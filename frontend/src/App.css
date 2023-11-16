@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  background-color: transparent;
+}
+
+:root {
+  --primary-bg-color: rgb(31, 36, 46);
+  --secondary-bg-color: rgb(51, 58, 71);
+  --main-color: rgb(39, 209, 104);
+  --title-color: rgb(102, 102, 102);
+  --text-color: rgb(207, 206, 206);
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Creepster", sans-serif;
+}
+
+html {
+  font-family: var(--primary-font);
+  font-size: 62.5%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.title {
+  font-family: var(--secondary-font);
+  color: #42b4ca;
+}
+
+.RM {
+  font-size: 4rem;
+}
