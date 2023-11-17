@@ -2,6 +2,7 @@
 Ricky y Morty 
 
 - Web app using React JS.
+- Completely responsive according to the sizes of the screen.
 - Fetch public API of Rick and Morty for datas.
 - Try to create the title of Rick and Morty as its original font and color.
 - Add search area to search according to name of the characters.
