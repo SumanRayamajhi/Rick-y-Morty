@@ -22,7 +22,7 @@ const Cards = ({ results }) => {
       );
     });
   } else {
-    display = "No Characters Found";
+    display = "No Characters Found :/";
   }
   return <section className="cards">{display}</section>;
 };
