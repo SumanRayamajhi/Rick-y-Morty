@@ -64,12 +64,14 @@
   color: var(--text-color);
 }
 
-.non-human::before,
-.human::before {
+.alien::before,
+.human::before,
+.animal::before,
+.humanoid::before {
   content: "";
   display: inline-block;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.3rem;
+  width: 1.3rem;
   margin-right: 0.5rem;
   border-radius: 50%;
 }
@@ -78,12 +80,22 @@
   background: rgb(31, 207, 31);
 }
 
-.non-human::before {
-  background: rgb(86, 31, 197);
+.alien::before {
+  background: rgb(222, 13, 107);
+}
+
+.animal::before {
+  background: rgb(8, 23, 117);
+}
+
+.humanoid::before {
+  background: rgb(222, 159, 13);
 }
 
 .human,
-.non-human {
+.animal,
+.alien,
+humanoid {
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -99,10 +111,10 @@
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  @media only screen and (max-width: 768px) {
-    .cards {
-      grid-template-columns: repeat(1, 1fr);
-    }
+@media only screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

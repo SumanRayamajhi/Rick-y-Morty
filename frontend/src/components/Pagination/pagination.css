@@ -1,0 +1,12 @@
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 4;
+}
+
+.previous-button,
+.next-button {
+  margin: 0 2rem;
+}

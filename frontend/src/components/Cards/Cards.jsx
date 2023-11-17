@@ -12,7 +12,17 @@ const Cards = ({ results }) => {
             <img src={image} alt="characters" className="characters-img" />
             <div className="container-content">
               <h2 className="characters-name">{name}</h2>
-              <h3 className={species === "Human" ? "human" : "non-human"}>
+              <h3
+                className={
+                  species === "Human"
+                    ? "human"
+                    : species === "Animal"
+                    ? "animal"
+                    : species === "Alien"
+                    ? "alien"
+                    : "humanoid"
+                }
+              >
                 {species}
               </h3>
               <h3 className="origin-name">{origin.name}</h3>

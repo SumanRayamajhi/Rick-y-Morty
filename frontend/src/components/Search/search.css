@@ -5,7 +5,7 @@
   width: 50%;
   margin: 0 auto;
   margin-top: 4rem;
-  border-radius: 2rem;
+  border-radius: 5rem;
 }
 
 .search__area input {
@@ -26,4 +26,11 @@ input:focus::placeholder {
   font-size: 1.6rem;
   color: var(--text-color);
   cursor: pointer;
+  top: 30%;
+}
+
+@media only screen and (max-width: 500px) {
+  .search__area {
+    font-size: 1rem;
+  }
 }

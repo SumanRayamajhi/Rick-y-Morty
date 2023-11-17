@@ -10,7 +10,7 @@ const Search = ({ setSearch, pageNumber, setPageNumber }) => {
           setPageNumber(pageNumber);
           setSearch(e.target.value);
         }}
-        placeholder="Search for Characters"
+        placeholder="Search"
         type="text"
       />
       <FaSearch onClick={(e) => e.preventDefault()} className="search__icon" />

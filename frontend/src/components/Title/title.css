@@ -1,0 +1,28 @@
+.title-characters {
+  color: var(--text-color);
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.title-characters::after {
+  content: "";
+  display: inline-block;
+  background-color: var(--main-color);
+  height: 0.4rem;
+  border-radius: 6rem;
+  width: 40%;
+  margin: 0 0 0.9rem 0.9rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .title-characters {
+    font-size: 2.9rem;
+  }
+
+  .title-characters::after {
+    width: 30%;
+    margin: 0 0 0.5rem 1rem;
+  }
+}

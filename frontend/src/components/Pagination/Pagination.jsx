@@ -1,20 +1,24 @@
 import React from "react";
+import ReactPaginate from "react-paginate";
 import "./pagination.css";
 
-const Pagination = ({ pageNumber, setPageNumber }) => {
-  const next = () => {
-    if (pageNumber === pageNumber.length) return;
-    setPageNumber((previous) => previous + 1);
-  };
-  const prev = () => {
-    if (pageNumber === 1) return;
-    setPageNumber((previous) => previous - 1);
-  };
+const Pagination = ({ info, pageNumber, setPageNumber }) => {
   return (
-    <div className="pagination">
-      <button onClick={prev}>Prev</button>
-      <button onClick={next}>Next</button>
-    </div>
+    <ReactPaginate
+      className="pagination gap-3 pagination-container"
+      forcePage={pageNumber === 1 ? 0 : pageNumber - 1}
+      nextLabel="Next"
+      previousLabel="Prev"
+      nextClassName="next-button"
+      previousClassName="previous-button"
+      pageClassName="page-item"
+      pageLinkClassName="page-link"
+      activeClassName="active"
+      onPageChange={(data) => {
+        setPageNumber(data.selected + 1);
+      }}
+      pageCount={info?.pages}
+    />
   );
 };
 
